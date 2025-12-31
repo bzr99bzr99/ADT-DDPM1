@@ -40,7 +40,7 @@ class PositionalEmbedding(nn.Module):
 # -------------------------
 class AdaptiveDilationConv1D(nn.Module):
     def __init__(self, in_channels: int, out_channels: int, kernel_size: int = 3,
-                 dilation_rates: Tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+                 dilation_rates: Tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8),
                  reduction_ratio: int = 4):
         super().__init__()
         self.paths = nn.ModuleList([
@@ -308,5 +308,6 @@ class UNet1D(nn.Module):
         for block in self.ups:
             skip = skips.pop()
             x = block(x, skip, t_emb, c_emb)
+
 
         return self.final_conv(x)
