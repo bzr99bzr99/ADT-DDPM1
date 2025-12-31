@@ -1,10 +1,4 @@
-# ADT-DDPM: Adaptive Dilated Time-aware Denoising Diffusion Probabilistic Models
-
-This repository contains the implementation of **ADT-DDPM** (Adaptive Dilated Time-aware Denoising Diffusion Probabilistic Models). The code demonstrates the model's performance and capabilities using the **PU (Purdue) Dataset**.
-
-## 📖 Overview
-
-ADT-DDPM enhances the standard diffusion model architecture by introducing adaptive mechanisms to better capture temporal dependencies and feature details. This implementation focuses on generating high-quality time-series data while maintaining diversity.
+# ADT-DDPM
 
 ## 📂 Project Structure
 
@@ -33,7 +27,7 @@ ADT-DDPM enhances the standard diffusion model architecture by introducing adapt
 Ensure you have the necessary Python libraries installed (PyTorch, NumPy, etc.).
 
 ### 2. Data Preparation
-The code is currently configured to utilize the **PU Dataset**. Ensure the dataset paths in `config.py` are correctly pointing to your local data directory.
+The code is currently configured to utilize the **PU Dataset**.
 
 ### 3. Training
 To start training the ADT-DDPM model with the specific Intra-batch Diversity Loss:
