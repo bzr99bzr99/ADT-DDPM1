@@ -1,3 +1,4 @@
+Here is the updated `README.md` incorporating the new file descriptions. You can copy the code block below directly.
 
 ```markdown
 # ADT-DDPM (Adaptive Dilated Time-aware DDPM)
